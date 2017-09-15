@@ -15,6 +15,66 @@ $(document).ready(function() {
         var phpPts = 0;
         var rubyPts = 0;
 
+        if (answer1 === 'option1') {
+            phpPts += 1;
+        } else if (answer1 === 'option2') {
+            javaPts += 1;
+        } else if (answer1 === 'option3') {
+            cSharpPts += 1;
+        }else if (answer1 === 'option3') {
+            rubyPts += 1;
+        }
+
+        if (answer2 === 'option1') {
+            rubyPts += 1;
+        } else if (answer2 === 'option2') {
+            cSharpPts += 1;
+        } else if (answer2 === 'option3') {
+            javaPts += 1;
+        }else if (answer2 === 'option3') {
+            phpPts += 1;
+        }
+
+        if (answer3 === 'option1') {
+            phpPts += 1;
+        } else if (answer3 === 'option2') {
+            rubyPts += 1;
+        } else if (answer3 === 'option3') {
+            javaPts += 1;
+        }else if (answer3 === 'option3') {
+            cSharpPts += 1;
+        }
+
+        if (answer4 === 'option1') {
+            rubyPts += 1;
+        } else if (answer4 === 'option2') {
+            phpPts += 1;
+        } else if (answer4 === 'option3') {
+            cSharpPts += 1;
+        }else if (answer4 === 'option3') {
+            javaPts += 1;
+        }
+
+        if (answer5 === 'option1') {
+            phpPts += 1;
+        } else if (answer5 === 'option2') {
+            javaPts += 1;
+        } else if (answer5 === 'option3') {
+            cSharpPts += 1;
+        }else if (answer5 === 'option3') {
+            rubyPts += 1;
+        }
+
+        if (answer6 === 'option1') {
+            rubyPts += 1;
+        } else if (answer6 === 'option2') {
+            cSharpPts += 1;
+        } else if (answer6 === 'option3') {
+            javaPts += 1;
+        }else if (answer6 === 'option3') {
+            phpPts += 1;
+        }
+
 
 
     });
