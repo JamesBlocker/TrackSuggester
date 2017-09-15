@@ -1,10 +1,31 @@
 /*body {
     background-color: blue;
 }*/
+img {
+    display: block;
+    margin: auto;
+}
 
-/*.jumbotron {
+.jumbotron h1{
+    text-align: center;
     display: none;
-}*/
+}
+
+.jumbotron h2{
+    text-align: center;
+    display: none;
+}
+
+.jumbotron h3{
+    text-align: center;
+    display: none;
+}
+
+.jumbotron h4{
+    text-align: center;
+    display: none;
+}
+
 
 .center {
     align-items: center;
@@ -33,3 +54,10 @@
 #questions {
     display: none;
 }
+
+.radio-label {
+    /*background: yellow;*/
+}
+ #questions h4 {
+    text-decoration: underline;
+ }

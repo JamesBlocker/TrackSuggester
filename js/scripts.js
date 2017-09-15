@@ -1,12 +1,19 @@
 $(document).ready(function() {
 
+    $('img').hide();
+    $('.jumbotron h1').fadeIn(1500);
+    $('img').fadeIn(2000);
+    $('.jumbotron h2').fadeIn(2500);
+    $('.jumbotron h3').fadeIn(3500);
+    $('.jumbotron h4').fadeIn(4500);
+
     setTimeout(function() {
         $('.jumbotron').fadeOut(1000);
-    }, 5000);
+    }, 6000);
 
     setTimeout(function() {
         $('#questions').fadeIn();
-    }, 6000);
+    }, 7000);
 
     $('form#questions').submit(function(event) {
         event.preventDefault();
