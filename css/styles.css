@@ -10,6 +10,22 @@
     align-items: center;
 }
 
-.cSharp {
+.cSharpPanel {
+    display: none;
+}
+
+.javaPanel {
+    display: none;
+}
+
+.phpPanel {
+    display: none;
+}
+
+.rubyPanel {
+    display: none;
+}
+
+.oopsPanel {
     display: none;
 }
