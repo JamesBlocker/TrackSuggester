@@ -1,5 +1,5 @@
 $(document).ready(function() {
 
-    $('.jumbotron').fadeOut();
+    // $('.jumbotron').fadeOut();
 
 });
