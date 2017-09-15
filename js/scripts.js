@@ -10,9 +10,6 @@ $(document).ready(function() {
 
     $('form#questions').submit(function(event) {
         event.preventDefault();
-        $('#questions').fadeOut(1000);
-
-
         var answer1 = $("input:radio[name=q1]:checked").val();
         var answer2 = $('input:radio[name=q2]:checked').val();
         var answer3 = $('input:radio[name=q3]:checked').val();
@@ -23,7 +20,7 @@ $(document).ready(function() {
         var javaPts = 0;
         var phpPts = 0;
         var rubyPts = 0;
-
+        $('#questions').fadeOut(1000);
 
         if (answer1 === 'option1') {
             phpPts += 1;
@@ -34,7 +31,6 @@ $(document).ready(function() {
         }else if (answer1 === 'option3') {
             rubyPts += 1;
         }
-
 
         if (answer2 === 'option1') {
             rubyPts += 1;
@@ -110,6 +106,9 @@ $(document).ready(function() {
         } else {
             $('.oopsPanel').fadeIn();
         }
+    });
 
+    $('.btn-primary').click(function() {
+        location.reload();
     });
 });
