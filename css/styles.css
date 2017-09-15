@@ -89,6 +89,11 @@ img {
     margin-bottom: 10em;
 }
 
+#submit {
+    margin-top: 2em;
+    margin-bottom: 2px;
+}
+
 .clickable {
     cursor: pointer;
     color: #0088cc;
