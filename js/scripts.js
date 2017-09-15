@@ -1,8 +1,16 @@
 $(document).ready(function() {
+
+    setTimeout(function() {
+        $('.jumbotron').fadeOut(1000);
+    }, 5000);
+
+    setTimeout(function() {
+        $('#questions').fadeIn();
+    }, 6000);
+
     $('form#questions').submit(function(event) {
         event.preventDefault();
-        $('.jumbotron').fadeOut();
-        // $('.cSharpPanel').fadeIn();
+        $('#questions').fadeOut(1000);
 
 
         var answer1 = $("input:radio[name=q1]:checked").val();
@@ -80,17 +88,25 @@ $(document).ready(function() {
 
 
         bestLanguage = Math.max(phpPts, javaPts, cSharpPts, rubyPts);
-    
+
 
         //
         if (cSharpPts === bestLanguage) {
-            $('.cSharpPanel').fadeIn();
+            setTimeout(function() {
+                $('.cSharpPanel').fadeIn(1000);
+            }, 1000);
         } else if (javaPts === bestLanguage) {
-            $('.javaPanel').fadeIn();
+            setTimeout(function() {
+                $('.javaPanel').fadeIn(1000);
+            }, 1000);
         } else if (phpPts === bestLanguage) {
-            $('.phpPanel').fadeIn();
+            setTimeout(function() {
+                $('.phpPanel').fadeIn(1000);
+            }, 1000);
         } else if (rubyPts === bestLanguage) {
-            $('.rubyPanel').fadeIn();
+            setTimeout(function() {
+                $('.rubyPanel').fadeIn(1000);
+            }, 1000);
         } else {
             $('.oopsPanel').fadeIn();
         }

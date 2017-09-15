@@ -29,3 +29,7 @@
 .oopsPanel {
     display: none;
 }
+
+#questions {
+    display: none;
+}
