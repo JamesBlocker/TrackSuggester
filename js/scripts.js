@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('form#questions').submit(function(event) {
         event.preventDefault();
         // $('.jumbotron').fadeOut();
-        // $('.cSharp').fadeIn();
+        // $('.cSharpPanel').fadeIn();
         var answer1 = $('input:radio[name=q1]:checked').val();
         var answer2 = $('input:radio[name=q2]:checked').val();
         var answer3 = $('input:radio[name=q3]:checked').val();
