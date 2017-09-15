@@ -5,3 +5,7 @@
 /*.jumbotron {
     display: none;
 }*/
+
+.center {
+    align-items: center;
+}
