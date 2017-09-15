@@ -20,21 +20,26 @@ img {
 .jumbotron h1{
     text-align: center;
     display: none;
+    margin-top: 10px;
 }
 
 .jumbotron h2{
     text-align: center;
     display: none;
+    margin-top: 10px;
+
 }
 
 .jumbotron h3{
     text-align: center;
     display: none;
+    margin-top: 5px;
 }
 
 .jumbotron h4{
     text-align: center;
     display: none;
+    margin-top: 12px;
 }
 
 
@@ -70,6 +75,25 @@ img {
 .radio-label {
     /*background: yellow;*/
 }
- #questions h4 {
+
+#questions h4 {
     text-decoration: underline;
- }
+}
+
+#epic {
+    height: 5%;
+    width: 5%;
+}
+
+.btn {
+    margin-bottom: 10em;
+}
+
+.clickable {
+    cursor: pointer;
+    color: #0088cc;
+}
+
+.clickable:hover {
+    text-decoration: underline;
+}
