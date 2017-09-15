@@ -1,9 +1,20 @@
-/*body {
+body {
     background-color: blue;
-}*/
+}
+
+.container {
+    background-color: white;
+    overflow-y: auto;
+    height: 100%;
+}
+
 img {
     display: block;
     margin: auto;
+}
+
+.jumbotron#quiz {
+    padding-bottom: 1px;;
 }
 
 .jumbotron h1{
@@ -29,6 +40,7 @@ img {
 
 .center {
     align-items: center;
+    text-align: center;
 }
 
 .cSharpPanel {

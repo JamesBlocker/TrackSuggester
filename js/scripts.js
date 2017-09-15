@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+    $('.container').height($(window).height());
     $('img').hide();
     $('.jumbotron h1').fadeIn(1500);
     $('img').fadeIn(2000);
@@ -8,7 +9,7 @@ $(document).ready(function() {
     $('.jumbotron h4').fadeIn(4500);
 
     setTimeout(function() {
-        $('.jumbotron').fadeOut(1000);
+        $('.jumbotron#splash').fadeOut(1000);
     }, 6000);
 
     setTimeout(function() {
