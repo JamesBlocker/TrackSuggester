@@ -16,7 +16,6 @@ $(document).ready(function() {
         var phpPts = 0;
         var rubyPts = 0;
 
-        alert(answer1);
 
         if (answer1 === 'option1') {
             phpPts += 1;
@@ -28,7 +27,7 @@ $(document).ready(function() {
             rubyPts += 1;
         }
 
-        alert('c#1' + cSharpPts);
+
         if (answer2 === 'option1') {
             rubyPts += 1;
         } else if (answer2 === 'option2') {
@@ -79,9 +78,9 @@ $(document).ready(function() {
             phpPts += 1;
         }
 
-        alert('c#2' + cSharpPts);
+
         bestLanguage = Math.max(phpPts, javaPts, cSharpPts, rubyPts);
-        alert('best' + bestLanguage);
+    
 
         //
         if (cSharpPts === bestLanguage) {
