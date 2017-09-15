@@ -13,11 +13,18 @@ $(document).ready(function() {
     }, 6000);
 
     setTimeout(function() {
+        $('body').css("background-color", "#c2cbd3");
         $('#questions').fadeIn();
     }, 7000);
 
     $('form#questions').submit(function(event) {
         event.preventDefault();
+
+        // setTimeout(function() {
+        //     $('body').css("background-color", "#d0c2d3");
+        // }, 1200);
+
+        // $('body').css("background-color", "#d0c2d3");
         var answer1 = $("input:radio[name=q1]:checked").val();
         var answer2 = $('input:radio[name=q2]:checked').val();
         var answer3 = $('input:radio[name=q3]:checked').val();
@@ -99,18 +106,30 @@ $(document).ready(function() {
             setTimeout(function() {
                 $('.cSharpPanel').fadeIn(1000);
             }, 1000);
+            setTimeout(function() {
+                $('body').css("background-color", "#d0c2d3");
+            }, 1200);
         } else if (javaPts === bestLanguage) {
             setTimeout(function() {
                 $('.javaPanel').fadeIn(1000);
             }, 1000);
+            setTimeout(function() {
+                $('body').css("background-color", "#d0c2d3");
+            }, 1500);
         } else if (phpPts === bestLanguage) {
             setTimeout(function() {
                 $('.phpPanel').fadeIn(1000);
             }, 1000);
+            setTimeout(function() {
+                $('body').css("background-color", "#d0c2d3");
+            }, 1200);
         } else if (rubyPts === bestLanguage) {
             setTimeout(function() {
                 $('.rubyPanel').fadeIn(1000);
             }, 1000);
+            setTimeout(function() {
+                $('body').css("background-color", "#d0c2d3");
+            }, 1200);
         } else {
             $('.oopsPanel').fadeIn();
         }
