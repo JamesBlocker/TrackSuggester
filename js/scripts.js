@@ -141,7 +141,7 @@ $(document).ready(function() {
         }
     });
 
-    $('.btn-primary').click(function() {
+    $('#refresh').click(function() {
         location.reload();
     });
 });
