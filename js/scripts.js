@@ -101,37 +101,43 @@ $(document).ready(function() {
         bestLanguage = Math.max(phpPts, javaPts, cSharpPts, rubyPts);
 
 
+
         //
-        if (cSharpPts === bestLanguage) {
+        if (cSharpPts === bestLanguage && bestLanguage !== 0) {
             setTimeout(function() {
                 $('.cSharpPanel').fadeIn(1000);
             }, 1000);
             setTimeout(function() {
-                $('body').css("background-color", "#d0c2d3");
+                $('body').css("background-color", "#d8ac95");
             }, 1200);
-        } else if (javaPts === bestLanguage) {
+        } else if (javaPts === bestLanguage && bestLanguage !== 0) {
             setTimeout(function() {
                 $('.javaPanel').fadeIn(1000);
             }, 1000);
             setTimeout(function() {
-                $('body').css("background-color", "#d0c2d3");
+                $('body').css("background-color", "#95d89d");
             }, 1500);
-        } else if (phpPts === bestLanguage) {
+        } else if (phpPts === bestLanguage && bestLanguage !== 0) {
             setTimeout(function() {
                 $('.phpPanel').fadeIn(1000);
             }, 1000);
             setTimeout(function() {
-                $('body').css("background-color", "#d0c2d3");
+                $('body').css("background-color", "#b795d8");
             }, 1200);
-        } else if (rubyPts === bestLanguage) {
+        } else if (rubyPts === bestLanguage && bestLanguage !== 0) {
             setTimeout(function() {
                 $('.rubyPanel').fadeIn(1000);
             }, 1000);
             setTimeout(function() {
-                $('body').css("background-color", "#d0c2d3");
+                $('body').css("background-color", "#d89595");
             }, 1200);
         } else {
-            $('.oopsPanel').fadeIn();
+            setTimeout(function() {
+                $('.oopsPanel').fadeIn(1000);
+            }, 1000);
+            setTimeout(function() {
+                $('body').css("background-color", "#cc4747");
+            }, 1200);
         }
     });
 
