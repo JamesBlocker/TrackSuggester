@@ -1,5 +1,10 @@
 body {
     background-color: #c1d2c9;
+    background-image: url(img/brush.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
 }
 
 .container {

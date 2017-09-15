@@ -9,202 +9,202 @@
         <title>Coding Track Suggester</title>
     </head>
     <body>
-        <div class="container">
+            <div class="container">
 
-            <!-- splash opener -->
+                <!-- splash opener -->
 
-            <div class="jumbotron" id="splash">
-                <h1>Education Starts Now</h1>
-                <img id="lab" src="img/lab.jpg" alt="Epicodus computer lab">
-                <h2>Answering these simple questions</h2>
-                <h3>will help decide the right language for you</h3>
-                <h4>at Epicodus we want you to find the right path</h4>
-                <img src="img/epic.png" alt="Epicodus" id="epic">
+                <div class="jumbotron" id="splash">
+                    <h1>Education Starts Now</h1>
+                    <img id="lab" src="img/lab.jpg" alt="Epicodus computer lab">
+                    <h2>Answering these simple questions</h2>
+                    <h3>will help decide the right language for you</h3>
+                    <h4>at Epicodus we want you to find the right path</h4>
+                    <img src="img/epic.png" alt="Epicodus" id="epic">
+                </div>
+
+                <!-- quiz -->
+                <div class="row">
+                    <div class="col col-md-3">
+                    </div>
+                    <div class="col col-md-6">
+
+
+                        <form id="questions">
+                            <div class="jumbotron" id="quiz">
+                                <h3 class="center">Answering these questions will help determine the best track for you.</h3>
+
+                            </div>
+                            <div class="question1">
+                                <h4>How much  interest do you have in building/maintaining webpages?</h4>
+                                <input type="radio" name="q1" class="q1 center" value="option1">
+                                <label class="radio-label">Little</label>
+                                <input type="radio" name="q1" class="q1 center" value="option2">
+                                <label class="radio-label">Somewhat</label>
+                                <input type="radio" name="q1" class="q1 center" value="option3">
+                                <label class="radio-label">Interested</label>
+                                <input type="radio" name="q1" class="q1 center" value="option4">
+                                <label class="radio-label">Excited</label>
+                                <br>
+                            </div>
+                            <div class="question2">
+                                <h4>How much interest do you have in building/maintaining databases</h4>
+                                <input type="radio" name="q2" class="q2 center" value="option1">
+                                <label class="radio-label">Little</label>
+                                <input type="radio" name="q2" class="q2 center" value="option2">
+                                <label class="radio-label">Somewhat</label>
+                                <input type="radio" name="q2" class="q2 center" value="option3">
+                                <label class="radio-label">Interested</label>
+                                <input type="radio" name="q2" class="q2 center" value="option4">
+                                <label class="radio-label">Excited</label>
+                                <br>
+                            </div>
+                            <div class="question3">
+                                <h4>How much interest do you have in building video games?</h4>
+                                <input type="radio" name="q3" class="q3 center" value="option1">
+                                <label class="radio-label">Little</label>
+                                <input type="radio" name="q3" class="q3 center" value="option2">
+                                <label class="radio-label">Somewhat</label>
+                                <input type="radio" name="q3" class="q3 center" value="option3">
+                                <label class="radio-label">Interested</label>
+                                <input type="radio" name="q3" class="q3 center" value="option4">
+                                <label class="radio-label">Excited</label>
+                                <br>
+                            </div>
+                            <div class="question4">
+                                <h4>How interested are you have in large established libraries?</h4>
+                                <input type="radio" name="q4" class="q4 center" value="option1">
+                                <label class="radio-label">Little</label>
+                                <input type="radio" name="q4" class="q4 center" value="option2">
+                                <label class="radio-label">Somewhat</label>
+                                <input type="radio" name="q4" class="q4 center" value="option3">
+                                <label class="radio-label">Interested</label>
+                                <input type="radio" name="q4" class="q4 center" value="option4">
+                                <label class="radio-label">Excited</label>
+                                <br>
+                            </div>
+                            <div class="question5">
+                                <h4>How much interest do you have in front-end design?</h4>
+                                <input type="radio" name="q5" class="q5 center" value="option1">
+                                <label class="radio-label">Little</label>
+                                <input type="radio" name="q5" class="q5 center" value="option2">
+                                <label class="radio-label">Somewhat</label>
+                                <input type="radio" name="q5" class="q5 center" value="option3">
+                                <label class="radio-label">Interested</label>
+                                <input type="radio" name="q5" class="q5 center" value="option4">
+                                <label class="radio-label">Excited</label>
+                                <br>
+                            </div>
+                            <div class="question6">
+                                <h4>How interested are you in back end logic?</h4>
+                                <input type="radio" name="q6" class="q6 center" value="option1">
+                                <label class="radio-label">Little</label>
+                                <input type="radio" name="q6" class="q6 center" value="option2">
+                                <label class="radio-label">Somewhat</label>
+                                <input type="radio" name="q6" class="q6 center" value="option3">
+                                <label class="radio-label">Interested</label>
+                                <input type="radio" name="q6" class="q6 center" value="option4">
+                                <label class="radio-label">Excited</label>
+                                <br>
+                            </div>
+
+                            <input type="submit" id="submit" value="Submit" class="btn btn-primary">
+                        </form>
+                    </div>
+                    <div class="col col-md-3">
+                    </div>
+                </div>
+
+
+
+                <!-- track pages -->
+                <div class="row">
+                    <div class="col col-md-2">
+                    </div>
+                    <div class="col col-md-8">
+
+
+                        <div class="cSharpPanel">
+                            <h1>C#</h1>
+                            <img src="img/csharp.png" alt="C#">
+                            <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
+                            <button type="button" class="btn btn-primary">Refresh</button>
+                            <div class="row center">
+                                <div class="col col-md-4">
+                                    <p class="clickable"><a href="https://www.epicodus.com/">Epicodus</a></p>
+                                </div>
+                                <div class="col col-md-4">
+                                    <p class="clickable"><a href="https://www.learnhowtoprogram.com/courses">Learn How To Program</a></p>
+                                </div>
+                                <div class="col col-md-4">
+                                    <p class="clickable"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C# Docs</a></p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="javaPanel">
+                            <h1>Java</h1>
+                            <img src="img/java.png" alt="Java">
+                            <p>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</p>
+                            <button type="button" class="btn btn-primary">Refresh</button>
+                            <div class="row center">
+                                <div class="col col-md-4">
+                                    <p class="clickable"><a href="https://www.epicodus.com/">Epicodus</a></p>
+                                </div>
+                                <div class="col col-md-4">
+                                    <p class="clickable"><a href="https://www.learnhowtoprogram.com/courses">Learn How To Program</a></p>
+                                </div>
+                                <div class="col col-md-4">
+                                    <p class="clickable"><a href="http://www.oracle.com/technetwork/java/javase/documentation/index.html">Java Docs</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phpPanel">
+                            <h1>PHP</h1>
+                            <img src="img/php.png" alt="PHP">
+                            <p>PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.</p>
+                            <button type="button" class="btn btn-primary">Refresh</button>
+                            <div class="row center">
+                                <div class="col col-md-4">
+                                    <p class="clickable"><a href="https://www.epicodus.com/">Epicodus</a></p>
+                                </div>
+                                <div class="col col-md-4">
+                                    <p class="clickable"><a href="https://www.learnhowtoprogram.com/courses">Learn How To Program</a></p>
+                                </div>
+                                <div class="col col-md-4">
+                                    <p class="clickable"><a href="http://php.net/docs.php">PHP Docs</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rubyPanel">
+                            <h1>Ruby</h1>
+                            <img src="img/ruby.png" alt="Ruby">
+                            <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
+                            <button type="button" class="btn btn-primary">Refresh</button>
+                            <div class="row center">
+                                <div class="col col-md-4">
+                                    <p class="clickable"><a href="https://www.epicodus.com/">Epicodus</a></p>
+                                </div>
+                                <div class="col col-md-4">
+                                    <p class="clickable"><a href="https://www.learnhowtoprogram.com/courses">Learn How To Program</a></p>
+                                </div>
+                                <div class="col col-md-4">
+                                    <p class="clickable"><a href="http://ruby-doc.org/">Ruby Docs</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="oopsPanel">
+                            <h1>OH COME ON DUDE<h1>
+                            <h2>!!!something has gone wrong!!!</h2>
+                            <h3>just choose options like a normal human  being and this whole thing will go smoother</h3>
+                            <h4>Don't be a troll, just start over... maybe you need a <a href="https://www.youtube.com/">YouTube</a> break...jeeze >.<</h4>
+                            <button type="button" class="btn btn-primary" id="refresh">Refresh</button>
+                        </div>
+                    </div>
+                    <div class="col col-md-2">
+                    </div>
+                </div>
+
+
             </div>
-
-            <!-- quiz -->
-            <div class="row">
-                <div class="col col-md-3">
-                </div>
-                <div class="col col-md-6">
-
-
-                    <form id="questions">
-                        <div class="jumbotron" id="quiz">
-                            <h3 class="center">Answering these questions will help determine the best track for you.</h3>
-
-                        </div>
-                        <div class="question1">
-                            <h4>How much  interest do you have in building/maintaining webpages?</h4>
-                            <input type="radio" name="q1" class="q1 center" value="option1">
-                            <label class="radio-label">Little</label>
-                            <input type="radio" name="q1" class="q1 center" value="option2">
-                            <label class="radio-label">Somewhat</label>
-                            <input type="radio" name="q1" class="q1 center" value="option3">
-                            <label class="radio-label">Interested</label>
-                            <input type="radio" name="q1" class="q1 center" value="option4">
-                            <label class="radio-label">Excited</label>
-                            <br>
-                        </div>
-                        <div class="question2">
-                            <h4>How much interest do you have in building/maintaining databases</h4>
-                            <input type="radio" name="q2" class="q2 center" value="option1">
-                            <label class="radio-label">Little</label>
-                            <input type="radio" name="q2" class="q2 center" value="option2">
-                            <label class="radio-label">Somewhat</label>
-                            <input type="radio" name="q2" class="q2 center" value="option3">
-                            <label class="radio-label">Interested</label>
-                            <input type="radio" name="q2" class="q2 center" value="option4">
-                            <label class="radio-label">Excited</label>
-                            <br>
-                        </div>
-                        <div class="question3">
-                            <h4>How much interest do you have in building video games?</h4>
-                            <input type="radio" name="q3" class="q3 center" value="option1">
-                            <label class="radio-label">Little</label>
-                            <input type="radio" name="q3" class="q3 center" value="option2">
-                            <label class="radio-label">Somewhat</label>
-                            <input type="radio" name="q3" class="q3 center" value="option3">
-                            <label class="radio-label">Interested</label>
-                            <input type="radio" name="q3" class="q3 center" value="option4">
-                            <label class="radio-label">Excited</label>
-                            <br>
-                        </div>
-                        <div class="question4">
-                            <h4>How interested are you have in large established libraries?</h4>
-                            <input type="radio" name="q4" class="q4 center" value="option1">
-                            <label class="radio-label">Little</label>
-                            <input type="radio" name="q4" class="q4 center" value="option2">
-                            <label class="radio-label">Somewhat</label>
-                            <input type="radio" name="q4" class="q4 center" value="option3">
-                            <label class="radio-label">Interested</label>
-                            <input type="radio" name="q4" class="q4 center" value="option4">
-                            <label class="radio-label">Excited</label>
-                            <br>
-                        </div>
-                        <div class="question5">
-                            <h4>How much interest do you have in front-end design?</h4>
-                            <input type="radio" name="q5" class="q5 center" value="option1">
-                            <label class="radio-label">Little</label>
-                            <input type="radio" name="q5" class="q5 center" value="option2">
-                            <label class="radio-label">Somewhat</label>
-                            <input type="radio" name="q5" class="q5 center" value="option3">
-                            <label class="radio-label">Interested</label>
-                            <input type="radio" name="q5" class="q5 center" value="option4">
-                            <label class="radio-label">Excited</label>
-                            <br>
-                        </div>
-                        <div class="question6">
-                            <h4>How interested are you in back end logic?</h4>
-                            <input type="radio" name="q6" class="q6 center" value="option1">
-                            <label class="radio-label">Little</label>
-                            <input type="radio" name="q6" class="q6 center" value="option2">
-                            <label class="radio-label">Somewhat</label>
-                            <input type="radio" name="q6" class="q6 center" value="option3">
-                            <label class="radio-label">Interested</label>
-                            <input type="radio" name="q6" class="q6 center" value="option4">
-                            <label class="radio-label">Excited</label>
-                            <br>
-                        </div>
-
-                        <input type="submit" id="submit" value="Submit" class="btn btn-warning">
-                    </form>
-                </div>
-                <div class="col col-md-3">
-                </div>
-            </div>
-
-
-
-            <!-- track pages -->
-            <div class="row">
-                <div class="col col-md-2">
-                </div>
-                <div class="col col-md-8">
-
-
-                    <div class="cSharpPanel">
-                        <h1>C#</h1>
-                        <img src="img/csharp.png" alt="C#">
-                        <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
-                        <button type="button" class="btn btn-primary">Refresh</button>
-                        <div class="row center">
-                            <div class="col col-md-4">
-                                <p class="clickable"><a href="https://www.epicodus.com/">Epicodus</a></p>
-                            </div>
-                            <div class="col col-md-4">
-                                <p class="clickable"><a href="https://www.learnhowtoprogram.com/courses">Learn How To Program</a></p>
-                            </div>
-                            <div class="col col-md-4">
-                                <p class="clickable"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C# Docs</a></p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="javaPanel">
-                        <h1>Java</h1>
-                        <img src="img/java.png" alt="Java">
-                        <p>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</p>
-                        <button type="button" class="btn btn-primary">Refresh</button>
-                        <div class="row center">
-                            <div class="col col-md-4">
-                                <p class="clickable"><a href="https://www.epicodus.com/">Epicodus</a></p>
-                            </div>
-                            <div class="col col-md-4">
-                                <p class="clickable"><a href="https://www.learnhowtoprogram.com/courses">Learn How To Program</a></p>
-                            </div>
-                            <div class="col col-md-4">
-                                <p class="clickable"><a href="http://www.oracle.com/technetwork/java/javase/documentation/index.html">Java Docs</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="phpPanel">
-                        <h1>PHP</h1>
-                        <img src="img/php.png" alt="PHP">
-                        <p>PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.</p>
-                        <button type="button" class="btn btn-primary">Refresh</button>
-                        <div class="row center">
-                            <div class="col col-md-4">
-                                <p class="clickable"><a href="https://www.epicodus.com/">Epicodus</a></p>
-                            </div>
-                            <div class="col col-md-4">
-                                <p class="clickable"><a href="https://www.learnhowtoprogram.com/courses">Learn How To Program</a></p>
-                            </div>
-                            <div class="col col-md-4">
-                                <p class="clickable"><a href="http://php.net/docs.php">PHP Docs</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rubyPanel">
-                        <h1>Ruby</h1>
-                        <img src="img/ruby.png" alt="Ruby">
-                        <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
-                        <button type="button" class="btn btn-primary">Refresh</button>
-                        <div class="row center">
-                            <div class="col col-md-4">
-                                <p class="clickable"><a href="https://www.epicodus.com/">Epicodus</a></p>
-                            </div>
-                            <div class="col col-md-4">
-                                <p class="clickable"><a href="https://www.learnhowtoprogram.com/courses">Learn How To Program</a></p>
-                            </div>
-                            <div class="col col-md-4">
-                                <p class="clickable"><a href="http://ruby-doc.org/">Ruby Docs</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="oopsPanel">
-                        <h1>OH COME ON DUDE<h1>
-                        <h2>!!!something has gone wrong!!!</h2>
-                        <h3>just choose options like a normal human  being and this whole thing will go smoother</h3>
-                        <h4>Don't be a troll, just start over... maybe you need a <a href="https://www.youtube.com/">YouTube</a> break...jeeze >.<</h4>
-                        <button type="button" class="btn btn-primary" id="refresh">Refresh</button>
-                    </div>
-                </div>
-                <div class="col col-md-2">
-                </div>
-            </div>
-
-
-        </div>
     </body>
 </html>
